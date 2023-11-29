@@ -6,6 +6,7 @@ export async function handle(formData) {
     const nombre = formData.get('nombre')
     const apellidos = formData.get('apellidos')
     const avatar = formData.get('avatar')
+    
     const buffer = await avatar.arrayBuffer()
     const bytes = new Uint8Array(buffer)
 
