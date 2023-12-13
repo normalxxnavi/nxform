@@ -13,17 +13,28 @@ a {
   background-color: blue;
   padding: 20px;
   border-radius: 6px;
-}
 
-a:hover {
-  color: azure;
+  &:hover {
+    color: azure;
+  }
 }
 
 h1 {
   padding-bottom: 50px;
 }
 
-input, button {
+input[type="text"],
+input[type="password"],
+input[type="number"],
+input[type="range"],
+input[type="month"],
+input[type="week"],
+input[type="date"],
+input[type="url"],
+input[type="search"],
+input[type="email"],
+input[type="tel"],
+button {
   display: block;
   font-size: 22px;
   width: 100%;
@@ -31,17 +42,49 @@ input, button {
   padding: 6px;
   border: solid 1px darkblue;
   border-radius: 6px;
+
+  &:disabled {
+    background-color: lightgray;
+  }
+}
+
+input[type="textarea"] {
+  display: block;
+  text-align: left;
+  font-size: 22px;
+  width: 100%;
+  margin: 10px auto;
+  padding: 50px;
+  border: solid 1px darkblue;
+  border-radius: 6px;
+}
+
+select,option {
+  display: block;
+  font-size: 15px;
+  width: 50%;
+  padding: 20px;
+  margin: 0px 0px 10px 0px;
+  border: solid 1px darkblue;
+  border-radius: 6px;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  display: block;
+  text-align: left;
+  font-size: 22px;
+  margin: 10px 0px;
+  padding: 10px;
+  border: solid 1px darkblue;
+  border-radius: 6px;
 }
 
 button {
   background-color: lightskyblue;
-}
 
-button:hover {
-  background-color: rgb(196, 229, 250);
-  box-shadow: 0 0 2px gray;
-}
-
-button:disabled {
-  background-color: lightgray;
+  &:hover {
+    background-color: rgb(196, 229, 250);
+    box-shadow: 0 0 2px gray;
+  }
 }
